@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_afroswagger">
+
+    <fragment
+        android:id="@+id/nav_afroswagger"
+        android:name="com.example.afrocamgistlab.fragments.AfroswaggerFragment"
+        android:label="@string/menu_afroswagger"
+        tools:layout="@layout/fragment_posts" />
+
+    <fragment
+        android:id="@+id/nav_afrotalent"
+        android:name="com.example.afrocamgistlab.fragments.AfrotalentFragment"
+        android:label="@string/menu_afrotalent"
+        tools:layout="@layout/fragment_afrotalent" />
+
+    <fragment
+        android:id="@+id/nav_most_popular"
+        android:name="com.example.afrocamgistlab.fragments.MostPopularFragment"
+        android:label="@string/menu_most_popular"
+        tools:layout="@layout/fragment_most_popular" />
+</navigation>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="62dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_profile"
+        android:src="@mipmap/ic_filled_person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@mipmap/ic_filled_person" />
+
+    <TextView
+        android:id="@+id/txt_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_dim"
+        android:text="@string/post_author"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_profile"
+        app:layout_constraintTop_toTopOf="@+id/img_profile" />
+
+    <TextView
+        android:id="@+id/txt_comment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/author_description"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_user_name" />
+
+    <TextView
+        android:id="@+id/txt_comment_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/comment_like"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_comment_text"
+        app:layout_constraintTop_toBottomOf="@+id/txt_comment_text" />
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/divider"
+        android:src="@mipmap/ic_filled_circle"
+        app:layout_constraintStart_toEndOf="@+id/txt_comment_like"
+        app:layout_constraintTop_toTopOf="@+id/txt_comment_like" />
+
+    <TextView
+        android:id="@+id/txt_comment_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/comment_replay"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/dot"
+        app:layout_constraintTop_toTopOf="@+id/txt_comment_like" />
+
+    <TextView
+        android:id="@+id/txt_comment_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="@dimen/smaller_dim"
+        android:paddingEnd="@dimen/big_dim"
+        android:text="@string/menu_dots"
+        android:textAlignment="textEnd"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_comment_reply"
+        app:layout_constraintTop_toTopOf="@+id/txt_comment_reply" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
