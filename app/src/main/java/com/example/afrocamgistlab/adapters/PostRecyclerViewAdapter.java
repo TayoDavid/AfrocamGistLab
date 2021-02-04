@@ -119,6 +119,10 @@ public class PostRecyclerViewAdapter extends RecyclerView.Adapter<PostRecyclerVi
             commentIntent.putParcelableArrayListExtra("commentList", commentsForIntent);
             v.getContext().startActivity(commentIntent);
         });
+
+        holder.mPostLikeIcon.setOnClickListener(v -> {
+
+        });
     }
 
     @Override

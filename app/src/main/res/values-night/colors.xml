@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="stroke">#66BBBBBB</color>
+    <color name="purple_200">#D9BB86FC</color>
+    <color name="purple_500">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#AB03DA</color>
+    <color name="teal_700">#D96E0187</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_color_1">#334B494C</color>
+    <color name="bg_color_2">#989EAC</color>
+    <color name="bg_color">#07EFEFEF</color>
+    <color name="bg_color_variant">#4B494C</color>
+    <color name="bg_list_item">#334B494C</color>
+    <color name="comment_submit">#FF5722</color>
+    <color name="bg_comment">#804B494C</color>
+    <color name="bg_small_corner">#994B494C</color>
+    <color name="bg_main">#000000</color>
+</resources>

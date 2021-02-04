@@ -17,11 +17,13 @@
         <activity
             android:label="@string/post"
             android:parentActivityName=".MainActivity"
-            android:name=".PostActivity" />
+            android:name=".PostActivity"
+            android:theme="@style/Theme.AfrocamgistLab.NoActionBar"/>
         <activity
             android:name=".CommentActivity"
             android:label="@string/comment_label"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AfrocamgistLab.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

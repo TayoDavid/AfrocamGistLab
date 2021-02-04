@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -42,6 +43,10 @@ public class CommentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comment);
+        Toolbar commentToolbar = findViewById(R.id.comment_toolbar);
+        commentToolbar.setTitle("Comment");
+        setSupportActionBar(commentToolbar);
+
         adapter = new CommentRecyclerViewAdapter(comments);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

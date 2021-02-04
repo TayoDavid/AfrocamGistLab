@@ -37,6 +37,9 @@ public interface APIService {
     @POST("api/posts/{id}/report")
     Call<SingleApiResponse<String>> reportPost(@Path("id") int id);
 
+    @POST("api/posts/{id}/report")
+    Call<SingleApiResponse<String>> likePost(@Path("id") int id);
+
     @POST("api/posts")
     Call<SingleApiResponse<Post>> addPost(@Body Post post);
 

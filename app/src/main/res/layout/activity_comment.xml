@@ -5,25 +5,44 @@
     android:id="@+id/comment_activity_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="@dimen/smaller_dim"
     android:orientation="vertical"
     tools:context=".CommentActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AfrocamgistLab.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/comment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.AfrocamgistLab.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lst_comments"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="8dp"
-        android:paddingBottom="@dimen/big_dim"
         android:layout_weight="1"
         android:background="@drawable/detail_bg_content"
+        android:paddingBottom="@dimen/big_dim"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -31,17 +50,17 @@
         android:layout_height="62dp"
         android:background="@drawable/detail_bg_content"
         android:orientation="horizontal"
-        android:paddingStart="@dimen/small_dim"
-        android:paddingEnd="@dimen/smaller_dim"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <EditText
             android:id="@+id/edt_add_comment"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:paddingEnd="@dimen/smaller_dim"
+            android:paddingStart="@dimen/small_dim"
             android:layout_weight="1"
             android:autofillHints="Add comment"
-            android:background="@drawable/detail_bg_content"
+            android:background="@drawable/bg_transparent"
             android:hint="@string/hint_comment"
             android:inputType="textMultiLine" />
 
@@ -49,22 +68,22 @@
             android:id="@+id/add_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/smaller_dim"
+            android:layout_marginEnd="@dimen/small_dim"
             android:background="@drawable/bg_txt_button"
             android:padding="@dimen/small_dim"
             android:text="@string/comment"
-            android:textColor="@color/white" />
+            android:textColor="@color/design_default_color_on_primary" />
 
         <TextView
             android:id="@+id/update_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/smaller_dim"
+            android:layout_marginEnd="@dimen/small_dim"
             android:background="@drawable/bg_txt_button"
             android:visibility="gone"
             android:padding="@dimen/small_dim"
             android:text="@string/update_comment"
-            android:textColor="@color/white" />
+            android:textColor="@color/design_default_color_on_primary" />
 
     </LinearLayout>
 

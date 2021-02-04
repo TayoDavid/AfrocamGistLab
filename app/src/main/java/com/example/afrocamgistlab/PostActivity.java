@@ -16,6 +16,7 @@ import android.widget.VideoView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.afrocamgistlab.model.MediaFile;
 import com.example.afrocamgistlab.model.Post;
@@ -54,6 +55,9 @@ public class PostActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
+        Toolbar postToolbar = findViewById(R.id.post_toolbar);
+        postToolbar.setTitle("Post");
+        setSupportActionBar(postToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
